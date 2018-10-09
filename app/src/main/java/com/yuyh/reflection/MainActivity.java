@@ -13,7 +13,7 @@ import com.yuyh.reflection.annotation.OnClick;
 public class MainActivity extends AppCompatActivity {
 
     @InjectView(R.id.hello)
-    TextView tvHello;
+    public TextView tvHello;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,8 +21,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Inject.inject(this);
-
-        tvHello.setText("hahaha");
     }
 
     @OnClick(R.id.hello)
