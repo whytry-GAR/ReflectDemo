@@ -41,7 +41,7 @@ public class ClipboardHook {
                 if (argsLength >= 2 && args[0] instanceof ClipData) {
                     ClipData data = (ClipData) args[0];
                     String text = data.getItemAt(0).getText().toString();
-                    text += "this is shared from ServiceHook-----by Shawn_Dut";
+                    text += "this is shared from ServiceHook";
                     args[0] = ClipData.newPlainText(data.getDescription().getLabel(), text);
                 }
             }
