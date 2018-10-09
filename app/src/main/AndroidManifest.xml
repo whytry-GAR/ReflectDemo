@@ -8,7 +8,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <!--<activity android:name=".MainActivity">-->
+        <!-- 全面屏手机需要设置 >= 2.2 以上数值，以实现刘海屏适配 -->
+        <meta-data android:name="android.max_aspect" android:value="2.4" />
+        <activity android:name=".HookMainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

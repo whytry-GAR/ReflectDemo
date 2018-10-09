@@ -27,4 +27,5 @@ public class MainActivity extends AppCompatActivity {
     public void tvHelloClick(View v){
         Toast.makeText(this, "OnClick", Toast.LENGTH_LONG).show();
     }
+
 }
