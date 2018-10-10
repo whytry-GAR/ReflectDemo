@@ -8,10 +8,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/**
- * @author yuyh.
- * @date 2016/6/13.
- */
+
 public class Inject {
     public static final String TAG = "Reflection";
 

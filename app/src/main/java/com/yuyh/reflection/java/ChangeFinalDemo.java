@@ -1,4 +1,4 @@
-package com.yuyh.reflection;
+package com.yuyh.reflection.java;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;

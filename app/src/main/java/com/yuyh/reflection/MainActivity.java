@@ -21,6 +21,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Inject.inject(this);
+//        Test.getDeclaredMethods();
+//        Monkey monkey = new Monkey();
+//        Object proxy =  Proxy.newProxyInstance(Monkey.class.getClassLoader(),Monkey.class.getInterfaces(),new MonkeyInvocationHandler(monkey));
+
+
     }
 
     @OnClick(R.id.hello)

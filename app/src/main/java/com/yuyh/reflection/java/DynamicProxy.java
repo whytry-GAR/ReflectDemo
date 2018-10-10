@@ -1,4 +1,4 @@
-package com.yuyh.reflection;
+package com.yuyh.reflection.java;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -38,6 +38,8 @@ public class DynamicProxy {
         System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
         IHello hello = (IHello) new DynamicProxyTest().bind(new Hello());
         hello.sayHello();
+
+
     }
 }
 

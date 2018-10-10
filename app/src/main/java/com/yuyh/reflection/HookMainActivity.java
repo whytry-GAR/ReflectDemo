@@ -12,7 +12,8 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.yuyh.reflection.java.hook.ClipboardHook;
+import com.yuyh.reflection.hook.ClipboardHook;
+
 
 public class HookMainActivity extends AppCompatActivity implements View.OnClickListener {
 

@@ -101,7 +101,6 @@ public class Test {
         for (int i = 0; i < fields.length; i++) {
             Log.i(TAG, "fields[" + i + "] = " + fields[i].getName());
         }
-
         try {
             // 获取当前类的某个属性
             Field field = people.getClass().getDeclaredField("name");
@@ -141,6 +140,10 @@ public class Test {
             Log.i(TAG, "interfaces[" + i + "] = " + interfaces[i].getName());
         }
     }
+
+
+
+
 
 
 }
