@@ -3,6 +3,7 @@
     package="com.yuyh.reflection">
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,9 +11,12 @@
         android:theme="@style/AppTheme">
 
         <!-- 全面屏手机需要设置 >= 2.2 以上数值，以实现刘海屏适配 -->
-        <meta-data android:name="android.max_aspect" android:value="2.4" />
-        <!--<activity android:name=".HookMainActivity">-->
-            <activity android:name=".MainActivity">
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4" />
+
+        <activity android:name=".HookMainActivity">
+
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +24,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            />/>
+
     </application>
 
 </manifest>

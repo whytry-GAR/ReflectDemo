@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 
 
 @Documented
-@Retention(RetentionPolicy.RUNTIME)
+@Retention(RetentionPolicy.CLASS)
 @Target(ElementType.METHOD)
 public @interface OnClick {
 

@@ -17,7 +17,6 @@ public class ClipboardHook {
     public static void hookService(Context context) {
         IBinder clipboardService = ServiceManager.getService(Context.CLIPBOARD_SERVICE);
         String IClipboard = "android.content.IClipboard";
-
         if (clipboardService != null) {
             IBinder hookClipboardService =
                     (IBinder) Proxy.newProxyInstance(clipboardService.getClass().getClassLoader(),
